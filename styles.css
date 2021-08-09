@@ -2,6 +2,7 @@
 
 
 /*general*/
+/*Ici, notre design principal commrespond à la présentation qu'on souhaite avoir sur mobile*/
 
 body
 {
@@ -140,8 +141,7 @@ header
 {
     background-color:#F2F2F2 ;
     color: black;
-    padding :10px;
-    border:#F2F2F2 solid ;
+    padding :12px;
     border-radius: 10px 0px 0px 10px;
 
 
@@ -165,8 +165,8 @@ header
     background-color: #0065FC;
     font-size: 1rem;
     color: white;
-    padding: 12px 12px 12px ;
-    border: 1px #0065FC solid;
+    border-color: #0065FC;
+    padding: 12px 12px 12px 12px ;
     border-radius: 0px 10px 10px 0px;
 
 }
@@ -179,7 +179,7 @@ header
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 0.6rem;
 }
@@ -193,15 +193,15 @@ header
 .filterIcon 
 {
     position: relative;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.4rem;
+    height: 2.4rem;
     border-radius: 50%;
     background-color: #DEEBFF;
     margin-right: 1rem;
 }
 .filterIcon i
 {
-    text-align: center;
+    align-items: center;
     margin :auto;
     display:flex;
     position: absolute;
@@ -221,16 +221,17 @@ header
     border-left: #DEEBFF none;
     border-radius: 20px;
     margin-right: 2rem;
-    height: 2.6rem;
+    height: 2.5rem;
     padding-right: 1rem;
 }
 
 .filterText
 {
-    padding-right: 10px;
+    padding-right: 14px;
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    white-space: nowrap;
     
 }
 .infoLocation
@@ -273,8 +274,8 @@ header
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:flex-start;
+    flex-wrap: nowrap;
+    justify-content:space-between;
     margin-bottom: 2rem;
 }
 
@@ -286,6 +287,7 @@ header
     margin-right: 1rem;
     background-color: #F2F2F2;
     width: 870px;
+    max-width: 870px;
     height: auto;
     border-radius: 20px 20px;
     padding:1rem 1rem 0.6rem;
@@ -390,7 +392,7 @@ font-size: 0.5em;
 .popularTitle
 {
     display:flex;
-    flex:row;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -476,6 +478,7 @@ margin-bottom: 1.5rem
 {
     padding: 1rem 1rem 0rem 1rem;
     margin-bottom: 2rem;
+    max-width:1440px;
 }
 
 .activity h1
@@ -490,7 +493,7 @@ margin-left: 1rem ;
     justify-content: space-between;
     height: 445px;
     margin:1rem;
-    width:1440px;
+    width: 100%;
 
 }
 
@@ -582,7 +585,7 @@ footer
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr; 
-    gap: 0em 0em; 
+    gap: 0em 3em; 
     background-color: #F2F2F2;
     padding: 2rem;
 }
@@ -635,19 +638,38 @@ footer
     margin: 1rem 0rem 1rem 0rem;
 }
 
-/* Media queries pour Iphone 8 */
+
+
+
+
+/* --------------------------Media queries pour Iphone 8 ----------------------------------*/
+
+
+
+
+
 
 
 /* On screens that are 600px or less*/
-
-/*Bloc filtrage mobile*/
-@media screen and (max-width: 601px)
+@media screen and  (max-width: 601px)
 {
     body
     {
         max-width: 375px;
+        min-width: 300px;
         margin: 0;
     }
+
+    h1
+    {
+    font-size: 1.4rem;
+    }
+
+    h2
+    {
+    font-size: 1.2rem;
+    }
+
     .headerConteneur
     {
         display: grid;
@@ -679,7 +701,14 @@ footer
         grid-area: 1 / 3 / 2 / 4; 
         display: flex;
         justify-content:flex-start;
-    }    .menuHeaderLink:hover
+    }   
+    .menuHeaderLink:hover
+    {
+        border-bottom: 3px #0065FC solid;
+        border-top: 3px transparent solid
+    }
+
+    .menuHeaderSignU:hover
     {
         border-bottom: 3px #0065FC solid;
         border-top: 3px transparent solid
@@ -696,6 +725,8 @@ footer
         align-items: center;
         margin-bottom: 0.6rem;
         width: 100%;
+        max-width: 375px;
+        min-width: 300px ;
     }
     
     .textButton
@@ -713,13 +744,13 @@ footer
         background-color: #0065FC;
         border-radius: 10px 10px 10px 10px;
         margin-left: -0.3rem;
-    
+
     }
- 
 
     .filter
     {
-        width:375px;
+        max-width: 375px;
+        min-width: 300px ;
         font-size : 1rem;
     }
  
@@ -733,65 +764,57 @@ footer
     }
 
     .filterIcon 
-        {
-            position: relative;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-            background-color: #DEEBFF;
-            margin-right: 1rem;
-        }
+    {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #DEEBFF;
+        margin-right: 1rem;
+    }
 
     .filterIcon i
-        {
-            font-size :1rem
+    {
+            font-size :1rem;
         
-        }
-        
+    }
 
     .filterText
-        {
-            padding-right: 10px;
-            display: flex;
-            align-items: center;
-            font-size: 0.9rem;
-            
-        }
-
-
+    {
+        padding-right: 14px;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        white-space: nowrap;
+        
+    }
     .infoLocation
-        { 
-            display: flex;
-            flex-direction: row ;
-            justify-content: flex-start;
-            align-items: stretch;
+    { 
+        display: flex;
+        flex-direction: row ;
+        justify-content: flex-start;
+        align-items: stretch;
         
-        }
+    }
         
-        .iconInfo 
-        {
-            position: relative;
-            width: 1rem;
-            height: 1rem;
-            border-radius: 100%;
-            background-color: white;
-            margin-right: 1rem;
-            margin-top : 1rem;
-
-            padding-left: 0.1rem;
-            border: 1px #f2f2f2 solid;
-        }
-        .iconInfo i
-        {
-            width: 0.6rem;
-            height: 0.6rem;
-            position:relative;
-            font-size: 0.5rem;
-        }
-        .textInfo
-        {
+    .iconInfo 
+    {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1rem;
+        margin-top : 1rem;
+        padding-left: 0.1rem;
+    }
+    .iconInfo i
+    {
+        width: 0.6rem;
+        height: 0.6rem;
+        font-size: 0.5rem;
+    }
+    .textInfo
+    {
             font-size: 0.9rem;;
-        }
+    }
 
 /* bloc Host*/
 
@@ -800,11 +823,15 @@ footer
         width: 375px;
         display:flex;
         flex-direction: column-reverse;
+        max-width: 375px;
+        min-width: 300px ;
     }
 
     .hostList
     {
         width: 375px;
+        max-width: 375px;
+        min-width: 300px ;
     }
 
     .mostPopular
@@ -815,6 +842,8 @@ footer
         margin-right: 0;
         margin-left:0;
         width:375px;
+        max-width: 375px;
+        min-width: 300px ;
         padding:1rem 1rem 1rem 1rem;
         background-color:#f2f2f2;
         border-radius: 0;
@@ -895,111 +924,294 @@ footer
         width:375px;
     }
 
-.highlightActivity
-{
+    .highlightActivity
+    {
     width: 345px;
     height :140px;
     margin-bottom: 1rem;
-}
+    }
 
 
-.highlightActivity img
-{
+    .highlightActivity img
+    {
     width: 345px;
     height :90px;
     
-}
+    }
 
-.smallActivity
-{
+    .smallActivity
+    {
     width: 345px;
     height :140px;
 
     margin-bottom: 1rem;
-}
+    }
 
 
-.smallActivity img
-{
+    .smallActivity img
+    {
     object-fit: cover;
     width: 345px;
     height: 90px;
     
-}
+    }
 
-.littleActivity
-{
+    .littleActivity
+    {
     width: 345px;
     height: 140px;
 
     margin-bottom: 1rem;
-}
+    }
 
 
 
-.littleActivity img
-{
+    .littleActivity img
+    {
     width: 345px;
     height: 80px;
-    
-}
+    }
 
 
 /*footer*/
-footer 
-{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0em 0em;
-  grid-auto-flow: row;
-}
+    footer 
+    {
+        display: grid;
+        min-width: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0em 0em;
+    }
 
-.blocFooter1 { grid-area: 1 / 1 / 2 / 2; }
+    .blocFooter1 { grid-area: 1 / 1 / 2 / 2; }
 
-.blocFooter2 { grid-area: 2 / 1 / 3 / 2; }
+    .blocFooter2 { grid-area: 2 / 1 / 3 / 2; }
 
-.blocFooter3 { grid-area: 3 / 1 / 4 / 2; }
-
-
-
-.blocFooter1 a
-{
-    font-size: 0.8rem;
-    margin: 1rem 0rem 0.2rem 0rem;
-}
+    .blocFooter3 { grid-area: 3 / 1 / 4 / 2; }
 
 
-.blocFooter2 a
-{
-    font-size: 0.8rem;
-    margin: 1rem 0rem 0.2rem 0rem;
-}
+
+    .blocFooter1 a
+    {
+        font-size: 1rem;
+        margin: 1rem 0rem 0.2rem 0rem;
+    }
 
 
-.blocFooter3 a
-{
-    font-size: 0.8rem;
-    margin: 1rem 0rem 0.2rem 0rem;
-}
-.blocFooter1 h2
-{
-    font-size: 0.9rem;
-    margin: 1.5rem 0rem 0.2rem 0rem;
-}
+    .blocFooter2 a
+    {
+        font-size: 1rem;
+        margin: 1rem 0rem 0.2rem 0rem;
+    }
 
 
-.blocFooter2 h2
-{
-    font-size: 0.9rem;
+    .blocFooter3 a
+    {
+        font-size: 1rem;
+        margin: 1rem 0rem 0.2rem 0rem;
+    }
+    .blocFooter1 h2
+    {
+        margin: 0.5rem 0rem 0.2rem 0rem;
+    }
+
+
+    .blocFooter2 h2
+    {
     margin: 2rem 0rem 0.2rem 0rem;
-}
+    }
 
 
-.blocFooter3 h2
-{
-    font-size: 0.9rem;
+    .blocFooter3 h2
+    {
     margin: 1rem 0rem 0.2rem 0rem;
+    }
+
 }
+
+
+/* On screens 601 ==> 1024px*/
+@media screen and  (max-width: 1260px) and (min-width:1150px)
+{
+    .marsHost
+    {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around; 
+        margin-bottom: 2rem;
+        max-width: 100%;
+
+    }
+    .hostList
+    {
+        height: auto;
+        margin-left: 2rem;
+        margin-top:1rem;
+        margin-right: 1rem;
+        background-color: #F2F2F2;
+        width: 870px;
+        max-width: 870px;
+        min-width: 870px;
+        height: auto;
+        border-radius: 20px 20px;
+        padding:1rem 1rem 0.6rem;
+       
+    }
+    
+    
+    
+    .containerActivity
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        min-height: 400px;
+        margin:2rem;
+        width: 100%;}   
+
+
+
+    .highlightActivity
+    {
+        width: 300px;
+        height :180px;
+        margin: 1rem;
+    }
+
+
+    .highlightActivity img
+    {
+        width: 300px;
+        height :130px;
+    
+    }
+
+    .smallActivity
+    {
+        width: 300px;
+        height :180px;
+        margin: 1rem;
+    }
+
+
+    .smallActivity img
+    {
+        width: 300px;
+        height :130px;
+    
+    }
+
+    .littleActivity
+    {
+        width: 300px;
+        height :180px;
+        margin: 1rem;
+    }
+
+
+
+
+    .littleActivity img
+    {
+        width: 300px;
+        height :130px;
+    
+    }
+
+    
+
+}
+
+@media screen and  (max-width: 1149px) and (min-width:602px)
+{
+    
+    .marsHost
+    {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around; 
+        margin-bottom: 2rem;
+
+    }
+    .hostList
+    {
+        height: auto;
+        margin-left: 2rem;
+        margin-top:1rem;
+        margin-right: 1rem;
+        background-color: #F2F2F2;
+        width: 100%
+        height: auto;
+        border-radius: 20px 20px;
+        padding:1rem 1rem 0.6rem;
+       
+    }
+    
+    
+    .containerActivity
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        min-height: 670px;
+        margin:2rem;
+        width: 100%;}   
+
+
+
+    .highlightActivity
+    {
+        width: 300px;
+        height :180px;
+        margin: 1rem;
+    }
+
+
+    .highlightActivity img
+    {
+        width: 300px;
+        height :130px;
+    
+    }
+
+    .smallActivity
+    {
+        width: 300px;
+        height :180px;
+        margin: 1rem;
+    }
+
+
+    .smallActivity img
+    {
+        width: 300px;
+        height :130px;
+    
+    }
+
+    .littleActivity
+    {
+        width: 300px;
+        height :180px;
+        margin: 1rem;
+    }
+
+
+
+
+    .littleActivity img
+    {
+        width: 300px;
+        height :130px;
+    
+    }
+
+    
 
 }
