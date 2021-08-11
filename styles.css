@@ -2,13 +2,14 @@
 
 
 /*general*/
-/*Ici, notre design principal commrespond à la présentation qu'on souhaite avoir sur mobile*/
+/*Ici, notre design principal commrespond à la présentation qu'on souhaite avoir sur desktop pour passer ensuite vers de la tablette puis du smartphone*/
 
 body
 {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     max-width: 1440px;
+    font-size:10px;
 }
 main
 {
@@ -129,10 +130,6 @@ header
     margin-bottom: -0.5rem;
 }
 
-.mobilefilter
-{
-    display:none;
-}
 .localFilter
 { 
     display: inline-flex;
@@ -683,9 +680,8 @@ footer
         margin-top:1rem;
         margin-right: 1rem;
         background-color: #F2F2F2;
-        width: 870px;
-        max-width: 870px;
-        min-width: 870px;
+        max-width: 1250px;
+        min-width: 1160px;
         height: auto;
         border-radius: 20px 20px;
         padding:1rem 1rem 0.6rem;
@@ -708,9 +704,9 @@ footer
         margin-top:1rem;
         margin-right: 1rem;
         background-color: #F2F2F2;
-        width: 870px;
-        max-width: 870px;
-        min-width: 870px;
+        width: auto;
+        max-width: 1250px;
+        min-width: 1160px;
         height: auto;
         border-radius: 20px 20px;
         padding:1rem 1rem 0.6rem;
@@ -723,7 +719,8 @@ footer
 
     .popularTitle
     {
-        width: 640px;
+        max-width: 1250px;
+        min-width: 1160px;
         margin-left: 1rem;
     }
 
@@ -915,7 +912,8 @@ footer
         margin-top:1rem;
         margin-right: 1rem;
         background-color: #F2F2F2;
-        width: 670px;
+        max-width: 1139px;
+        width: 100%;
         height: auto;
         border-radius: 20px 20px;
         padding:1rem 1rem 0.6rem;
@@ -928,7 +926,9 @@ footer
 
     .popularTitle
     {
-        width: 640px;
+        max-width: 1139px;
+        width: 100%;
+        min-width: 602px;
         margin-left: 1rem;
     }
 
