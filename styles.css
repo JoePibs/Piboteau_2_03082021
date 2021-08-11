@@ -784,18 +784,11 @@ footer
         margin-left :0.4rem
     
     }
-    
-    
-    
-    .containerActivity
+    .activity
     {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content:space-around;
-        min-height: 400px;
-        margin:2rem;
-        width: 100%;}   
+        margin-left: 2rem;
+        padding: 2rem;
+    }
 
 
 
@@ -998,6 +991,12 @@ footer
     }
 
 
+
+    .activity
+    {
+        margin-left: 2rem;
+        padding: 2rem;
+    }
 
     
     
