@@ -230,6 +230,13 @@ header
     padding-right: 1rem;
 }
 
+.filterText :hover
+{
+ color: #0065FC;
+}
+
+
+
 .filterText
 {
     padding-right: 14px;
@@ -237,8 +244,8 @@ header
     align-items: center;
     font-size: 1.1rem;
     white-space: nowrap;
-    
 }
+
 .infoLocation
 { 
     display: flex;
@@ -652,6 +659,12 @@ footer
 /* On screens 601 ==> 1024px*/
 @media screen and  (max-width: 1260px) and (min-width:1150px)
 {
+
+    .filterText :hover
+    {
+        color: #0065FC;
+    }
+
     .marsHost
     {
 
@@ -769,6 +782,12 @@ footer
         border-top: 3px transparent solid;
         border-bottom: 3px transparent solid;
     }
+
+    .filterText :hover
+    {
+        color: #0065FC;
+    }
+
 
     .marsHost
     {
@@ -1096,6 +1115,11 @@ footer
         font-size: 1rem;
         
     }
+    .filterText :hover
+    {
+        color: #0065FC;
+    }      
+
     .infoLocation
     { 
         display: flex;
