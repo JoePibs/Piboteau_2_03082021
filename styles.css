@@ -657,35 +657,19 @@ footer
 @media screen and  (max-width: 1260px) and (min-width:1150px)
 {
 
-    .filterText :hover
-    {
-        color: #0065FC;
-    }
 
     .marsHost
     {
 
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content:space-around; 
         margin-bottom: 2rem;
         max-width: 100%;
 
     }
     .hostList
     {
-        height: auto;
-        margin-left: 2rem;
-        margin-top:1rem;
-        margin-right: 1rem;
-        background-color: #F2F2F2;
         max-width: 1250px;
-        min-width: 1160px;
-        height: auto;
-        border-radius: 20px 20px;
-        padding:1rem 1rem 0.6rem;
-       
+        min-width: 1160px; 
     }
 
     .moreHost
@@ -700,16 +684,10 @@ footer
         flex-wrap: wrap;
         justify-content:space-around; 
         height: auto;
-        margin-left: 2rem;
-        margin-top:1rem;
-        margin-right: 1rem;
         background-color: #F2F2F2;
         width: auto;
         max-width: 1250px;
         min-width: 1160px;
-        height: auto;
-        border-radius: 20px 20px;
-        padding:1rem 1rem 0.6rem;
    
     }
     .article
@@ -726,13 +704,8 @@ footer
 
     .popularCard
     { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: white;
         width: 243px;
         height :220px;
-        border-radius:10px 10px;
         padding: 0.2rem;
         margin-bottom: 1.5rem;
         box-shadow: 2px 1px 5px 1px rgba(226, 223, 223, 0.659);
@@ -740,8 +713,6 @@ footer
 
     .popularCardContent
     {
-        display: flex;
-        flex-direction: row;
         width: 243px;
         height :220px;
         
@@ -749,7 +720,6 @@ footer
 
     .popularCardContent img
     {
-        object-fit: cover;
         width: 243px;
         height: 100px;
         border-top-left-radius: 10px;
@@ -770,22 +740,7 @@ footer
         margin-bottom: -0.1rem;
         margin-left :0.4rem
     }
-    .mostStarIcon
-    {
-        list-style:none;
-        margin:0;
-        padding :0;
-        display: flex;
-        flex-direction: row;
-        font-size: 1.5rem;
-        margin-left :0.4rem
     
-    }
-    .activity
-    {
-        margin-left: 2rem;
-        padding: 2rem;
-    }
 
 
 
@@ -855,46 +810,19 @@ footer
     .headerSignUp 
     { 
         grid-area: 1 / 3 / 2 / 4; 
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 2rem;
-        color: #0065FC;
-        font-weight: 500;
         font-size: 1rem;
         border-top: 3px transparent solid;
         border-bottom: 3px transparent solid;
     }
 
-    .filterText :hover
-    {
-        color: #0065FC;
-    }
 
 
     .marsHost
     {
-
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content:space-around; 
         margin-bottom: 2rem;
         margin-left: 1rem;
-
-    }
-    .hostList
-    {
-        height: auto;
-        margin-left: 2rem;
-        margin-top:1rem;
-        margin-right: 1rem;
-        background-color: #F2F2F2;
-        width: 100%;
-        height: auto;
-        border-radius: 20px 20px;
-        padding:1rem 1rem 0.6rem;
-       
     }
     .moreHost
     {
@@ -914,8 +842,6 @@ footer
         background-color: #F2F2F2;
         max-width: 1139px;
         width: 100%;
-        height: auto;
-        border-radius: 20px 20px;
         padding:1rem 1rem 0.6rem;
    
     }
@@ -927,28 +853,22 @@ footer
     .popularTitle
     {
         max-width: 1139px;
-        width: 100%;
         min-width: 602px;
         margin-left: 1rem;
     }
 
     .popularCard
     { 
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: white;
         width: 243px;
         height :220px;
-        border-radius:10px 10px;
         padding: 0.2rem;
         margin-bottom: 1.5rem;
-        box-shadow: 2px 1px 5px 1px rgba(226, 223, 223, 0.659);
     }
 
     .popularCardContent
     {
-        display: flex;
         flex-direction: row;
         width: 243px;
         height :220px;
@@ -978,17 +898,6 @@ footer
         margin-bottom: -0.1rem;
         margin-left :0.4rem
     }
-    .mostStarIcon
-    {
-        list-style:none;
-        margin:0;
-        padding :0;
-        display: flex;
-        flex-direction: row;
-        font-size: 1.5rem;
-        margin-left :0.4rem
-    
-    }
 
 
 
@@ -1002,13 +911,10 @@ footer
     
     .containerActivity
     {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content:space-around;
         min-height: 670px;
-        margin:2rem;
-        width: 100%;}   
+        margin: 0;
+        width: 100%;
+    }   
 
 
 
@@ -1076,7 +982,6 @@ footer
     {
         max-width: 365px;
         min-width: 300px;
-        margin: 0rem;
     }
 
     h1
@@ -1094,21 +999,11 @@ footer
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 100px);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
     }
         
-    .logo 
-    { 
-        grid-area: 1 / 1 / 2 / 3; 
-    }
-
     .headerNav 
     { 
         grid-area: 2 / 1 / 3 / 4; 
-        display: flex;
-        justify-content:space-between;
-        
     }
     .menuHeaderLink[data-active=true]
     {
@@ -1124,28 +1019,16 @@ footer
     .menuHeaderLink:hover
     {
         border-bottom: 3px #0065FC solid;
-        border-top: 3px transparent solid;
         transform: scale(1.02);
     }
 
     .menuHeaderSignUp:hover
     {
         border-bottom: 3px #0065FC solid;
-        border-top: 3px transparent solid;
         transform: scale(1.02);
-    }
-    .finder
-    {
-        padding-right: 2rem;
     }
     .blocFilter
     {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 0.6rem;
-        width: 100%;
         max-width: 400px;
         min-width: 300px ;
     }
@@ -1171,7 +1054,6 @@ footer
     {
         max-width: 400px;
         min-width: 300px ;
-        font-size : 1rem;
     }
  
 
@@ -1185,25 +1067,17 @@ footer
 
     .filterIcon 
     {
-        position: relative;
         width: 2rem;
         height: 2rem;
-        border-radius: 50%;
-        background-color: #DEEBFF;
-        margin-right: 1rem;
     }
 
     .filterIcon i
     {
-            font-size :1rem;
-        
+        font-size :1rem;     
     }
 
     .filterText
     {
-        padding-right: 2px;
-        display: flex;
-        align-items: center;
         font-size: 1rem;
         
     }
@@ -1214,11 +1088,7 @@ footer
 
     .infoLocation
     { 
-        display: flex;
-        flex-direction: row ;
-        justify-content: flex-start;
         align-items: stretch;
-        
     }
         
     .iconInfo 
@@ -1237,7 +1107,7 @@ footer
     }
     .textInfo
     {
-            font-size: 0.9rem;;
+            font-size: 0.9rem;
     }
 
 /* bloc Host*/
@@ -1245,7 +1115,6 @@ footer
     .marsHost
     {
         width: 365px;
-        display:flex;
         flex-direction: column-reverse;
         max-width: 365px;
         min-width: 300px ;
@@ -1258,15 +1127,11 @@ footer
 
     .mostPopular
     {
-        height:auto;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
         margin-right: 0;
         margin-left:0;
         width:340px;
         max-width: 375px;
         min-width: 300px ;
-        padding:1rem 1rem 1rem 1rem;
         background-color:#f2f2f2;
         border-radius: 0;
     }
@@ -1277,8 +1142,6 @@ footer
     }
     .popularCardContent
     {
-        display: flex;
-        flex-direction: column;
         width: 310px;
         height :140px;
         
@@ -1308,8 +1171,6 @@ footer
     }
     .article
     {
-        flex-direction: column;
-        flex-wrap: nowrap;
         margin: 1rem
     }
 
@@ -1343,7 +1204,6 @@ footer
     }
     .containerActivity
     {
-        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
@@ -1366,7 +1226,7 @@ footer
     }
     .highlightActivity h3
     {
-        font-size: 1rem ;
+    font-size: 1rem ;
     }
 
     .smallActivity
@@ -1379,7 +1239,6 @@ footer
 
     .smallActivity img
     {
-    object-fit: cover;
     width: 310px;
     height: 90px;
     }
