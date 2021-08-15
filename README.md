@@ -3,13 +3,13 @@
 Deuxième projet du parcours développeur web chez OpenClassrooms. L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" 
 ***
 
-##Éléments fournis par l'entreprise virtuelle.
+## Éléments fournis par l'entreprise virtuelle.
 
-*La maquette pour les résolutions ordinateur et téléphone nous est donné.
-*Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
-*Les icones proviennent de Font Awesome
-*Les couleurs sont : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
-*La police est "Raleway"
+* La maquette pour les résolutions ordinateur et téléphone nous est donné.
+* Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
+* Les icones proviennent de Font Awesome
+* Les couleurs sont : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
+* La police est "Raleway"
 
 ## Cahier des charges
 
@@ -24,6 +24,6 @@ Deuxième projet du parcours développeur web chez OpenClassrooms. L'objectif es
 * Le site devra être compatible avec les dernières versions de Chrome et Firefox.
 * Le HTML et le CSS doivent être séparés et le dossier doit être organisé
 * Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
-###
+***
 ## Notes sur la réalisation du projet
 L'integration est faite sur l'éditeur Visual Studio Code avec les plugins Live server.
