@@ -15,11 +15,11 @@ main
 {
     margin-bottom: 4rem;
 }
-a {
-
+a 
+{
     color: inherit;
     text-decoration: none;
-  }
+}
 h1
 {
     font-size: 1.6rem;
@@ -28,18 +28,15 @@ h2
 {
     font-size: 1.5rem;
 }
-
 h3
 {
     font-size: 1.2rem;
     margin-bottom: -0.5rem;
 }
-
 p
 {
     font-size: 1rem;
 }
-
 i
 {
     color: #0065FC;
@@ -51,7 +48,8 @@ header
 {
     padding-right: 1rem;
 }
-  .headerConteneur{
+.headerConteneur
+{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px;
@@ -59,98 +57,82 @@ header
     grid-row-gap: 0px;
     margin:1rem 1rem 0rem 1rem;
     align-items: center;
-    }
-    
-    .logo 
-    { 
-        grid-area: 1 / 1 / 2 / 2; 
-        height: 2.8rem;
-        margin-left: 1rem;
-    }
-    .headerNav 
-    {
-         grid-area: 1 / 2 / 2 / 2; 
-         display: flex;
-         justify-content:flex-end;
-    }
-    .menuHeaderLink
-    {
-        padding: 2rem;
-        font-weight: 500;
-        font-size: 1rem;
-        text-align: center;
-        border-top: 3px transparent solid;
-        border-bottom: 3px transparent solid;
-    }
-    .menuHeaderLink:hover
-    {
-        border-top: 3px #0065FC solid;
-        border-bottom: 3px transparent solid
-    }
-
-    .headerSignUp:hover
-    {
-        border-top: 3px #0065FC solid;
-        border-bottom: 3px transparent solid
-    }
-    .menuHeaderLink[data-active=true] 
-    {
-        color: #0065FC;
-    }
-    .headerSignUp 
-    { 
-        grid-area: 1 / 3 / 2 / 4; 
-        display: flex;
-        align-items: center;
-        padding: 2rem;
-        color: #0065FC;
-        font-weight: 500;
-        font-size: 1rem;
-        border-top: 3px transparent solid;
-        border-bottom: 3px transparent solid;
-    }
-
-
-
-
-
+}   
+.logo 
+{ 
+    grid-area: 1 / 1 / 2 / 2; 
+    height: 2.8rem;
+    margin-left: 1rem;
+}
+.headerNav 
+{
+    grid-area: 1 / 2 / 2 / 2; 
+    display: flex;
+    justify-content:flex-end;
+}
+.menuHeaderLink
+{
+    padding: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+}
+.menuHeaderLink:hover
+{
+    border-top: 3px #0065FC solid;
+    border-bottom: 3px transparent solid
+}
+.headerSignUp:hover
+{
+    border-top: 3px #0065FC solid;
+    border-bottom: 3px transparent solid
+}
+.menuHeaderLink[data-active=true] 
+{
+    color: #0065FC;
+}
+.headerSignUp 
+{ 
+    grid-area: 1 / 3 / 2 / 4; 
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 500;
+    font-size: 1rem;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+}
 
 /*---------     Main CSS Desktop   ---------------*/
 
 /*Bloc filtrage*/
-
 .finder
 {
     margin-left: 2rem;
 }
-
 .titlefilter
 {
-
     margin-bottom: -0.5rem;
 }
-
 .localFilter
 { 
     display: inline-flex;
     align-items: center;
     justify-content: start;
     margin-bottom: 1rem;
-
-    
-}
+}  
 #buttonSearch
 {
     background-color:#F2F2F2 ;
     color: black;
     padding :12px;
     border-radius: 10px 0px 0px 10px;
-
-
 }
 .location 
 {
-
     border:1px#F2F2F2 solid ;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -161,7 +143,6 @@ header
     font-size: 1rem;
     color: #0a0a0a;
 }
-
 .locationButton
 {
     background-color: #0065FC;
@@ -170,13 +151,11 @@ header
     border-color: #0065FC;
     padding: 12px 12px 12px 12px ;
     border-radius: 0px 10px 10px 0px;
-
 }
 .imageButton
 {
     display:none;
 }
-
 .blocFilter
 {
     display: flex;
@@ -190,8 +169,6 @@ header
     margin-right: 2rem;
     font-size:1.3rem;
 }
-
-
 .filterIcon 
 {
     position: relative;
@@ -212,10 +189,8 @@ header
     transform: translate(-50%, -50%);
 
 }
-
 .filterSelection
 {
-   
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -226,14 +201,10 @@ header
     height: 2.5rem;
     padding-right: 1rem;
 }
-
 .filterText :hover
 {
- color: #0065FC;
+    color: #0065FC;
 }
-
-
-
 .filterText
 {
     padding-right: 14px;
@@ -242,7 +213,6 @@ header
     font-size: 1.1rem;
     white-space: nowrap;
 }
-
 .infoLocation
 { 
     display: flex;
@@ -251,7 +221,6 @@ header
     align-items: center;
 
 }
-
 .iconInfo 
 {
     position: relative;
@@ -277,7 +246,6 @@ header
     transform: translate(-50%, -50%);
 }
 
-
 /* Hebergement à marseille*/
 .marsHost
 {
@@ -287,7 +255,6 @@ header
     justify-content:space-between;
     margin-bottom: 2rem;
 }
-
 .hostList
 {
     height: auto;
@@ -301,9 +268,7 @@ header
     border-radius: 20px 20px;
     padding:1rem 1rem 0.6rem;
    
-}
-
-    
+}   
 .hostList h2
 {
     margin-left: 1rem ;
@@ -315,13 +280,11 @@ header
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem
-
 }
 .article a:hover
 {
     transform:scale(1.07);
 }
-
 .hostCard
 { 
     display: flex;
@@ -335,7 +298,6 @@ header
     margin-bottom: 1.5rem;
     box-shadow: 2px 1px 5px 1px rgba(226, 223, 223, 0.659);
 }
-
 .hostCard img
 {
     object-fit: cover;
@@ -345,8 +307,6 @@ header
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: -0.5rem;
-    
-
 }
 .hostCard h3
 {
@@ -369,25 +329,22 @@ header
     margin-left :0.4rem
 
 }
-
 .moreHost 
 {  
     font-size: 1rem;
     margin-top: -0.6rem;
     margin-left: 1rem;
 }
-
 .icon[data-active=true]
 {
-color: #0065FC; 
-font-size: 0.5em;
+    color: #0065FC; 
+    font-size: 0.5em;
 }
 .icon[data-active=false]
 {
-color: #F2F2F2; 
-font-size: 0.5em;
+    color: #F2F2F2; 
+    font-size: 0.5em;
 }
-
 
 /*Les plus populaires*/
 .mostPopular
@@ -399,7 +356,6 @@ font-size: 0.5em;
     border-radius: 20px 20px;
     padding:1rem 1rem 0 1rem;
 }
-
 .popularTitle
 {
     display:flex;
@@ -409,15 +365,11 @@ font-size: 0.5em;
     align-items: center;
     margin-bottom: -0.6rem;
     margin-right: 1rem;
-
 }
-
 .popularTitle i
 {
     color: #0a0a0a;
 }
-
-
 .popularCard
 {
     display: flex;
@@ -436,12 +388,9 @@ font-size: 0.5em;
     display: flex;
     flex-direction: column;
     width: 350px;
-    height :140px;
-    
+    height :140px;   
 }
-
 .popularCardContent img
-
 {
 object-fit: cover;
 float: left;
@@ -451,8 +400,6 @@ border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 margin-right: 1rem;
 }
-
-
 .popularCardContent h3
 {
 margin-bottom: -0.8rem;
@@ -462,17 +409,13 @@ margin-bottom: -0.8rem;
 margin-bottom: 1.5rem
 }
 .popularCardContent .starIcon
-
 {
     vertical-align: bottom;
 }
-
 .popularCardContent a:hover
 {
     transform:scale(1.07);
 }
-
-
 .mostStarIcon
 {
     list-style:none;
@@ -493,7 +436,7 @@ margin-bottom: 1.5rem
 
 .activity h1
 {
-margin-left: 1rem ;
+    margin-left: 1rem ;
 }
 .containerActivity
 {
@@ -527,13 +470,11 @@ margin-left: 1rem ;
     border-top-right-radius: 10px;
     
 }
-
 .highlightActivity h3
 {
     margin-left: 1rem;
     vertical-align: center;
 }
-
 .smallActivity
 {
     width: 300px;
@@ -541,10 +482,7 @@ margin-left: 1rem ;
     background-color: white;
     border-radius:15px;
     box-shadow: 2px 1px 5px 1px rgb(184, 181, 181);
-
 }
-
-
 .smallActivity img
 {
     object-fit: cover;
@@ -552,15 +490,13 @@ margin-left: 1rem ;
     height: 175px;
     margin-bottom: -0.5rem ;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
+    border-top-right-radius: 10px;   
 }
 .smallActivity h3
 {
     margin-left:1rem;
     vertical-align: center;
 }
-
 .littleActivity
 {
     width: 300px;
@@ -569,25 +505,18 @@ margin-left: 1rem ;
     border-radius:15px;
     box-shadow: 2px 1px 5px 1px rgb(184, 181, 181);
 }
-
-
 .littleActivity img
 {
     object-fit: cover;
     width: 300px;
     height: 110px;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
+    border-top-right-radius: 10px;  
 }
 .littleActivity h3
 {
     margin: 1rem;
 }
-
-
-
-
 
 /*---------     Footer CSS Desktop   ---------------*/
 footer 
@@ -603,13 +532,11 @@ footer
 {
     grid-area: 1 / 1 / 2 / 2; 
 }
-
 .blocFooter1 nav
 {
     display: flex;
     flex-direction: column;
 }
-
 .blocFooter1 a
 {
     font-size: 1.3rem;
@@ -619,13 +546,11 @@ footer
 { 
     grid-area: 1 / 2 / 2 / 3; 
 }
-
 .blocFooter2 nav
 {
     display: flex;
     flex-direction: column;
 }
-
 .blocFooter2 a
 {
     font-size: 1.3rem;
@@ -635,29 +560,20 @@ footer
 { 
     grid-area: 1 / 3 / 2 / 4; 
 }
-
 .blocFooter3 nav
 {
     display: flex;
     flex-direction: column;
 }
-
 .blocFooter3 a
 {
     font-size: 1.3rem;
     margin: 1rem 0rem 1rem 0rem;
 }
 
-
-
-
-
-
 /* On screens 601 ==> 1024px*/
 @media screen and  (max-width: 1260px) and (min-width:1150px)
 {
-
-
     .marsHost
     {
 
@@ -671,9 +587,7 @@ footer
         max-width: 1250px;
         min-width: 1160px; 
     }
-
     .moreHost
-
     {
          margin-bottom: 1rem;
     }
@@ -688,21 +602,19 @@ footer
         width: auto;
         max-width: 1250px;
         min-width: 1160px;
-   
     }
     .article
     {
         justify-content:space-around; 
     }
-
     .popularTitle
     {
         max-width: 1250px;
         min-width: 1160px;
         margin-left: 1rem;
     }
-
     .popularCard
+
     { 
         width: 243px;
         height :220px;
@@ -710,14 +622,11 @@ footer
         margin-bottom: 1.5rem;
         box-shadow: 2px 1px 5px 1px rgba(226, 223, 223, 0.659);
     }
-
     .popularCardContent
     {
         width: 243px;
-        height :220px;
-        
+        height :220px;   
     }
-
     .popularCardContent img
     {
         width: 243px;
@@ -726,8 +635,6 @@ footer
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
         margin-bottom: 1rem;
-        
-    
     }
     .popularCardContent h3
     {
@@ -740,63 +647,44 @@ footer
         margin-bottom: -0.1rem;
         margin-left :0.4rem
     }
-    
-
-
-
     .highlightActivity
     {
         width: 300px;
         height :180px;
         margin: 1rem;
     }
-
-
     .highlightActivity img
     {
         width: 300px;
         height :130px;
-    
     }
-
     .smallActivity
     {
         width: 300px;
         height :180px;
         margin: 1rem;
     }
-
-
     .smallActivity img
     {
         width: 300px;
-        height :130px;
-    
+        height :130px; 
     }
-
     .littleActivity
     {
         width: 300px;
         height :180px;
         margin: 1rem;
     }
-
-
-
-
     .littleActivity img
     {
         width: 300px;
         height :130px;
-    
     }
-
-    
-
 }
 
 @media screen and  (max-width: 1149px) and (min-width:602px)
 {
+   
     .headerConteneur 
     {
         display: grid; 
@@ -804,9 +692,7 @@ footer
         margin-left: 0; 
         grid-template-rows: 100px; 
         gap: 0em 0px; 
-   
     }
-
     .headerSignUp 
     { 
         grid-area: 1 / 3 / 2 / 4; 
@@ -814,21 +700,25 @@ footer
         border-top: 3px transparent solid;
         border-bottom: 3px transparent solid;
     }
-
-
-
     .marsHost
     {
         flex-wrap: wrap;
-        justify-content:space-around; 
+        justify-content:space-around;
+        width: auto;
         margin-bottom: 2rem;
         margin-left: 1rem;
+        margin-right:1rem;
+    
+    }
+    .hostList
+    {
+        max-width: 100%;
+        width:100%;
     }
     .moreHost
     {
         margin-bottom: 2rem;
     }
-
     .mostPopular
     {
         display: flex;
@@ -836,27 +726,21 @@ footer
         flex-wrap: wrap;
         justify-content:space-around; 
         height: auto;
-        margin-left: 2rem;
         margin-top:1rem;
-        margin-right: 1rem;
         background-color: #F2F2F2;
-        max-width: 1139px;
-        width: 100%;
         padding:1rem 1rem 0.6rem;
-   
+        width: auto;
     }
     .article
     {
         justify-content:space-around; 
     }
-
     .popularTitle
     {
-        max-width: 1139px;
-        min-width: 602px;
+        max-width: 100%;
+        min-width: 100%;
         margin-left: 1rem;
     }
-
     .popularCard
     { 
         flex-direction: row;
@@ -866,15 +750,12 @@ footer
         padding: 0.2rem;
         margin-bottom: 1.5rem;
     }
-
     .popularCardContent
     {
         flex-direction: row;
         width: 243px;
-        height :220px;
-        
+        height :220px; 
     }
-
     .popularCardContent img
     {
         object-fit: cover;
@@ -884,8 +765,6 @@ footer
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
         margin-bottom: 1rem;
-        
-    
     }
     .popularCardContent h3
     {
@@ -898,109 +777,70 @@ footer
         margin-bottom: -0.1rem;
         margin-left :0.4rem
     }
-
-
-
     .activity
     {
         margin-left: 2rem;
         padding: 2rem;
     }
-
-    
-    
     .containerActivity
     {
         min-height: 670px;
         margin: 0;
         width: 100%;
     }   
-
-
-
     .highlightActivity
     {
         width: 300px;
         height :180px;
         margin: 1rem;
     }
-
-
     .highlightActivity img
     {
         width: 300px;
         height :130px;
-    
     }
-
     .smallActivity
     {
         width: 300px;
         height :180px;
         margin: 1rem;
     }
-
-
     .smallActivity img
     {
         width: 300px;
         height :130px;
-    
     }
-
     .littleActivity
     {
         width: 300px;
         height :180px;
         margin: 1rem;
     }
-
-
-
-
     .littleActivity img
     {
         width: 300px;
         height :130px;
-    
     }
-
-    
-
 }
 
 /*--------------------------Media queries pour Iphone 8 ----------------------------------*/
-
-
-
-
-
 /* On screens that are 600px or less*/
 @media screen and  (max-width: 601px)
 {
-    body
-    {
-        max-width: 365px;
-        min-width: 300px;
-    }
-
     h1
     {
     font-size: 1.4rem;
     }
-
     h2
     {
     font-size: 1.2rem;
     }
-
     .headerConteneur
     {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 100px);
-    }
-        
+    }     
     .headerNav 
     { 
         grid-area: 2 / 1 / 3 / 4; 
@@ -1009,7 +849,6 @@ footer
     {
         border-bottom: 3px #0065FC solid;
     }
-
     .headerSignUp 
     { 
         grid-area: 1 / 3 / 2 / 4; 
@@ -1021,7 +860,6 @@ footer
         border-bottom: 3px #0065FC solid;
         transform: scale(1.02);
     }
-
     .menuHeaderSignUp:hover
     {
         border-bottom: 3px #0065FC solid;
@@ -1029,34 +867,27 @@ footer
     }
     .blocFilter
     {
-        max-width: 400px;
-        min-width: 300px ;
+        width: 100%;
+        max-width: 100%;
     }
-    
     .textButton
     {
         display:none;
     }
-
     .imageButton
     {
         color : white;
     }
-    
     .locationButton
     {
         border-radius: 10px 10px 10px 10px;
         margin-left: -0.3rem;
-
     }
-
     .filter
     {
-        max-width: 400px;
-        min-width: 300px ;
+        width: 270px;
+        max-width: 100%;
     }
- 
-
     .filterSelection
     {
         margin-bottom: 1rem;
@@ -1064,36 +895,30 @@ footer
         height: 2rem;
         padding-right: 0.5rem;
     }
-
     .filterIcon 
     {
         width: 2rem;
         height: 2rem;
     }
-
     .filterIcon i
     {
         font-size :1rem;     
     }
-
     .filterText
     {
-        font-size: 1rem;
-        
+        font-size: 1rem;  
     }
     .filterText :hover
     {
         color: #0065FC;
     }      
-
     .infoLocation
     { 
         align-items: stretch;
-    }
-        
+        max-width: 100%;
+    }   
     .iconInfo 
     {
-        width: 1rem;
         height: 1rem;
         margin-right: 1rem;
         margin-top : 1rem;
@@ -1107,57 +932,50 @@ footer
     }
     .textInfo
     {
-            font-size: 0.9rem;
+        width: 270px;
+        font-size: 0.9rem;
     }
-
-/* bloc Host*/
-
     .marsHost
     {
-        width: 365px;
+        max-width: 100% ;
         flex-direction: column-reverse;
-        max-width: 365px;
-        min-width: 300px ;
     }
-
     .hostList h2
     {
         margin-bottom: 2rem;
     }
-
     .mostPopular
     {
-        margin-right: 0;
-        margin-left:0;
-        width:340px;
-        max-width: 375px;
-        min-width: 300px ;
+        width:90%;
+        margin-left: 0;
+        max-width: 100%;
         background-color:#f2f2f2;
         border-radius: 0;
     }
-    
+    .popularCard
+    {
+        max-width: 270px;
+        height: 120px;
+        padding-right: 0.4rem;
+    }
     .popularTitle
     {
         padding-left: 1.5rem;
     }
     .popularCardContent
     {
-        width: 310px;
-        height :140px;
-        
+        width: auto;
+        height :120px;
     }
-    
     .popularCard img
     {
-        width: 130px;
-        height: 140px;
+        width: 90px;
+        height: 120px;
     }
-    
     .popularCardContent h3
     {
-        font-size: 1rem;
-    }
-    
+        font-size: 0.9rem;
+    }  
     .popularCardContent p
     {
         font-size: 0.8rem;
@@ -1166,25 +984,21 @@ footer
     {
         margin-left: 0;
         background-color: white;
-        width: 365px;
+        width: 100%;
         border-radius: 0;
     }
     .article
     {
         margin: 1rem
     }
-
-
-
     .hostCard
     { 
-        width: 305px;
+        width: 270px;
     }
-
     .hostCard img
     {
-    width:305px;
-    height: 110px;
+        width:270px;
+        height: 100px;
     }
     .hostCard h3
     {
@@ -1194,9 +1008,6 @@ footer
     {
         font-size: 0.8rem;
     }
-
-
-/*Activity*/
     .activityTitle
     {
         margin-bottom: 2rem;
@@ -1208,101 +1019,75 @@ footer
         flex-wrap: nowrap;
         height: auto;
         margin-bottom: 2rem;
-        width:345px;
+        width:100%;
     }
 
     .highlightActivity
     {
-    width: 310px;
-    height :140px;
-    margin-bottom: 2rem;
+        width: 270px;
+        height :140px;
+        margin-bottom: 2rem;
     }
-
-
     .highlightActivity img
     {
-    width: 310px;
-    height :90px;
+        width: 270px;
+        height :90px;
     }
     .highlightActivity h3
     {
-    font-size: 1rem ;
+        font-size: 1rem ;
     }
-
     .smallActivity
     {
-    width: 310px;
-    height :140px;
-    margin-bottom: 1rem;
+        width: 270px;
+        height :140px;
+        margin-bottom: 1rem;
     }
-
-
     .smallActivity img
     {
-    width: 310px;
-    height: 90px;
+        width: 270px;
+        height: 90px;
     }
-
     .smallActivity h3
     {
         font-size: 1rem ;
     }
-
     .littleActivity
     {
-    width: 310px;
-    height: 140px;
-    margin-bottom: 2rem;
+        width: 270px;
+        height: 140px;
+        margin-bottom: 2rem;
     }
-
-
     .littleActivity h3
     {
         font-size: 1rem ;
     }
-
-
-
     .littleActivity img
     {
-    width: 310px;
-    height: 80px;
+        width: 270px;
+        height: 80px;
     }
-
-
-/*footer*/
     footer 
     {
         display: grid;
-        width: 400px;
-        min-width: 300px;
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 0em 0em;
     }
-
     .blocFooter1 { grid-area: 1 / 1 / 2 / 2; }
-
     .blocFooter2 { grid-area: 2 / 1 / 3 / 2; }
-
     .blocFooter3 { grid-area: 3 / 1 / 4 / 2; }
-
-
-
     .blocFooter1 a
     {
         font-size: 1rem;
         margin: 1rem 0rem 0.2rem 0rem;
     }
-
-
     .blocFooter2 a
     {
         font-size: 1rem;
         margin: 1rem 0rem 0.2rem 0rem;
     }
-
-
     .blocFooter3 a
     {
         font-size: 1rem;
@@ -1312,17 +1097,13 @@ footer
     {
         margin: 0.5rem 0rem 0.2rem 0rem;
     }
-
-
     .blocFooter2 h2
     {
-    margin: 2rem 0rem 0.2rem 0rem;
+        margin: 2rem 0rem 0.2rem 0rem;
     }
-
-
     .blocFooter3 h2
     {
-    margin: 1rem 0rem 0.2rem 0rem;
+        margin: 1rem 0rem 0.2rem 0rem;
     }
 
 }
