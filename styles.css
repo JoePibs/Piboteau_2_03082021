@@ -151,7 +151,7 @@ header
     background-color: #0065FC;
     font-size: 1rem;
     color: white;
-    border-color: #0065FC;
+    border-color: #0064FC;
     padding: 12px 12px 12px 12px ;
     border-radius: 0px 10px 10px 0px;
 }
@@ -576,7 +576,7 @@ footer
     margin: 1rem 0rem 1rem 0rem;
 }
 
-@media screen and (max-device-width: 1024px)
+@media screen and ( max-width: 1024px )
 {
     body
     {max-width: 100%;}
@@ -725,7 +725,7 @@ footer
 
 /*--------------------------Media queries pour Iphone 8 ----------------------------------*/
 /* On screens that are 600px or less*/
-@media screen and (max-device-width: 601px)
+@media screen and ( max-width: 601px )
 {
     h1
     {
