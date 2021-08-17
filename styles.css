@@ -141,11 +141,6 @@ header
     padding-bottom: 14px;
     padding-left: 15px 
 }
-::placeholder
-{
-    font-size: 1rem;
-    color: #0a0a0a;
-}
 .locationButton
 {
     background-color: #0065FC;
@@ -411,10 +406,6 @@ margin-bottom: -0.8rem;
 .popularCardContent p
 {
 margin-bottom: 1.5rem
-}
-.popularCardContent .starIcon
-{
-    vertical-align: bottom;
 }
 .popularCardContent a:hover
 {
@@ -760,11 +751,6 @@ footer
         border-bottom: 3px #0065FC solid;
         transform: scale(1.02);
     }
-    .menuHeaderSignUp:hover
-    {
-        border-bottom: 3px #0065FC solid;
-        transform: scale(1.02);
-    }
     .localFilter
     {
         width: 95%;
@@ -892,10 +878,6 @@ footer
     .popularCardContent p
     {
         margin-bottom: 1.8rem
-    }
-    .popularCardContent .starIcon
-    {
-        vertical-align: bottom;
     }
     .hostTitle
     {
