@@ -7,15 +7,9 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    max-width: 100%;
-    width:100%;
+    margin: 0 auto;
     font-size:10px;
-}
-main
-{
-    max-width: 100%;
-    width: 100%;
+    max-width: 1440px;
 }
 a 
 {
@@ -48,8 +42,8 @@ i
 
 header
 {
-    max-width: 100%;
-    padding-right: 1rem;
+    /*max-width: 100%;
+    padding-right: 1rem;*/
 }
 .headerConteneur
 {
@@ -58,14 +52,13 @@ header
     grid-template-rows: 100px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin:1rem 1rem 0rem 1rem;
     align-items: center;
 }   
 .logo 
 { 
     grid-area: 1 / 1 / 2 / 2; 
     height: 2.8rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 .headerNav 
 {
@@ -95,6 +88,7 @@ header
 .menuHeaderLink[data-active=true] 
 {
     color: #0065FC;
+    border-top: solid 1px #0065FC;
 }
 .headerSignUp 
 { 
@@ -197,7 +191,7 @@ header
     border-radius: 20px;
     margin-right: 2rem;
     height: 2.5rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 .filterText :hover
 {
@@ -262,7 +256,6 @@ header
     margin-right: 1rem;
     background-color: #F2F2F2;
     width: 100%;
-    max-width: 100%;
     border-radius: 20px 20px;
     padding:1rem 1rem 0.6rem;
    
@@ -427,7 +420,6 @@ margin-bottom: 1.5rem
     padding: 1rem 1rem 0rem 1rem;
     margin-bottom: 2rem;
     width: 100%;
-    max-width:100%;
 }
 
 .activity h1
@@ -441,7 +433,6 @@ margin-bottom: 1.5rem
     flex-wrap: wrap;
     justify-content: space-between;
     height: 445px;
-    margin:1rem;
     width: 100%;
 
 }
@@ -523,6 +514,7 @@ footer
     gap: 0em 3em; 
     background-color: #F2F2F2;
     padding: 2rem;
+    width: 100%;
 }
 .blocFooter1 
 {
@@ -567,10 +559,10 @@ footer
     margin: 1rem 0rem 1rem 0rem;
 }
 
-@media screen and ( max-width: 1024px )
+
+@media screen and ( max-width: 1024px )and (min-width:768px)
 {
-    body
-    {max-width: 100%;}
+    
     .headerConteneur 
     {
         display: grid; 
@@ -598,10 +590,7 @@ footer
         max-width: 95%;
     
     }
-    .hostList
-    {
-        max-width: 95%;
-    }
+    
     .moreHost
     {
         margin-bottom: 2rem;
@@ -609,16 +598,18 @@ footer
     .mostPopular
     {
         display: flex;
+        flex-direction: column;
+        justify-content:space-evenly; 
+        width: 100%;
+        margin-left: 2rem;
+    }
+
+    .mostPopular__articles
+    {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content:space-around; 
-        height: auto;
-        margin-top:1rem;
-        margin-left: 2rem;
-        background-color: #F2F2F2;
-        padding:1rem 1rem 0.6rem;
-        width: 95%;
-        max-width: 100%;
+        justify-content:space-evenly; 
     }
     .article
     {
@@ -668,7 +659,7 @@ footer
     .activity
     {
         margin-left: 2rem;
-        max-width: 95%;
+        /*max-width: 95%;*/
         height: auto;
     }
     .containerActivity
@@ -739,6 +730,7 @@ footer
     .menuHeaderLink[data-active=true]
     {
         border-bottom: 3px #0065FC solid;
+        border-top: none;
     }
     .headerSignUp 
     { 
@@ -833,11 +825,9 @@ footer
     }
     .mostPopular
     {
-        width:100%;
-        margin-left: 0;
-        max-width: 100%;
-        background-color:#f2f2f2;
+        width:92%;
         border-radius: 0;
+        margin-left: 0rem;
     }
     .popularCard
     {
@@ -845,11 +835,11 @@ footer
         flex-direction: column;
         flex-wrap: wrap;
         background-color: white;
-        width: 90%;
+        width: 95%;
         height :140px;
         border-radius:10px 10px;
         padding: 0.3rem 0.5rem 0.3rem 0.3rem;
-        margin: 1rem 1rem 1.5rem 1rem;
+        margin: 1rem 1rem 1.5rem 0rem;
         box-shadow: 2px 1px 5px 1px rgba(226, 223, 223, 0.659);
     }
     .popularCardContent
@@ -863,7 +853,7 @@ footer
     {
         object-fit: cover;
         float: left;
-        width: 110px;
+        width: 170px;
         height: 140px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -877,6 +867,7 @@ footer
     }
     .popularCardContent p
     {
+        font-size:0.9rem;
         margin-bottom: 1.8rem
     }
     .hostTitle
@@ -887,7 +878,7 @@ footer
     {
         flex-direction: column;
         flex-wrap: nowrap;
-        padding-left: 0;
+        padding-left: 1rem;
         background-color: white;
         border-radius: 0;
         margin-left: 1rem;
@@ -895,12 +886,13 @@ footer
     .hostCard
     { 
         width: 300px;
+        height: 240px;
         margin-left: 1rem;
     }
     .hostCard img
     {
         width:300px;
-        height: 100px;
+        height: 150px;
     }
     .hostCard h3
     {
@@ -925,22 +917,20 @@ footer
         flex-wrap: nowrap;
         height: auto;
         margin-bottom: 2rem;
-        margin-left: 1rem;
         width:100%;
-
     }
 
     .highlightActivity
     {
         width: 300px;
-        height :140px;
+        height :200px;
         margin-bottom: 2rem;
         margin-left: 1rem;
     }
     .highlightActivity img
     {
         width: 300px;
-        height :90px;
+        height :160px;
     }
     .highlightActivity h3
     {
@@ -949,14 +939,14 @@ footer
     .smallActivity
     {
         width: 300px;
-        height :140px;
+        height :200px;
         margin-bottom: 1rem;
         margin-left: 1rem;
     }
     .smallActivity img
     {
         width: 300px;
-        height: 90px;
+        height: 150px;
     }
     .smallActivity h3
     {
@@ -965,7 +955,7 @@ footer
     .littleActivity
     {
         width: 300px;
-        height: 140px;
+        height: 200px;
         margin-bottom: 2rem;
         margin-left: 1rem;
     }
@@ -976,7 +966,7 @@ footer
     .littleActivity img
     {
         width: 300px;
-        height: 80px;
+        height: 160px;
     }
     footer 
     {
@@ -1017,4 +1007,38 @@ footer
         margin: 1rem 0rem 0.2rem 0rem;
     }
 
+}
+
+@media screen and (max-width:375px) 
+{
+    .hostCard
+    {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:320px) 
+{
+    .hostList
+    {
+        padding: 1rem 0 0.6rem;
+    }
+    .littleActivity, .highlightActivity, .smallActivity
+    {
+        margin-left: 0.3rem;
+    }
+    .article
+    {
+        margin: 0;
+    }
+    .mostPopular
+    {
+        padding: 0.5rem;
+        width: 111%;
+    }
+    .popularCardContent img
+    {
+        width: 100px;
+        font-size: 0.9rem;
+    }
 }
