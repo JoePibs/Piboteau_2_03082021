@@ -39,6 +39,7 @@ p
 i
 {
     color: #0065FC;
+    font-size: 20px;
 }
 
   /*---------- Header CSS Desktop*/
@@ -123,6 +124,7 @@ header
 #buttonSearch
 {
     background-color:#F2F2F2 ;
+    font-size: 20px;
     color: black;
     padding :12px;
     border-radius: 10px 0px 0px 10px;
@@ -132,7 +134,8 @@ header
     border:1px#F2F2F2 solid ;
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 15px 
+    padding-left: 15px;
+    font-weight:bold;
 }
 .locationButton
 {
@@ -168,6 +171,7 @@ header
     border-radius: 50%;
     background-color: #DEEBFF;
     margin-right: 1rem;
+    font-size: 20px;
 }
 .filterIcon i
 {
@@ -222,6 +226,7 @@ header
     background-color: white;
     margin-right: 5px;
     border: 1px #f2f2f2 solid;
+    font-size: 12px
 }
 .iconInfo i
 {
